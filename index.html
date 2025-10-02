@@ -23,21 +23,19 @@
             color: var(--light-text);
             background-color: var(--primary-purple);
             background-image: linear-gradient(135deg, var(--secondary-purple) 0%, var(--primary-purple) 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: grid; /* More robust for centering and overflow */
+            place-items: center; /* Replaces justify-content and align-items */
             min-height: 100vh;
             text-align: center;
             padding: 2rem;
             box-sizing: border-box;
             position: relative;
-            overflow: hidden; /* Hide overflowing pattern */
         }
 
         /* Subtle background pattern with musical notes */
         body::before {
             content: '';
-            position: fixed;
+            position: fixed; /* Keep background in place on scroll */
             top: 0;
             left: 0;
             width: 100%;
@@ -209,11 +207,11 @@
     <div class="container">
         <!-- Logo Section -->
         <div class="logo">
-            <img src="pictures/daralmousika_purple.png" alt="Dar Al Mousika Logo">
+            <img src="1414b4a1-82a5-404e-b2bf-515f88ec3a22_removalai_preview.png" alt="Dar Al Mousika Logo">
         </div>
 
         <!-- Main Heading and Tagline -->
-        <h1 class="school-name">DAR AL MOUSIKA</h1>
+        <h1 class="school-name">Dar Al Mousika</h1>
         <p class="status-heading">COMING SOON</p>
         <p class="tagline">Our website is under construction. We're working hard to bring you something amazing!</p>
 
@@ -288,5 +286,4 @@
     </script>
 
 </body>
-
 </html>
